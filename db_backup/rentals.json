@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6762f7a2c14c33fbcb491d71"
+  },
+  "vehicle_id": "6762e028925ac0a5f2855590",
+  "customer_id": "63f8f1df0b7ab",
+  "rental_start_date": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  },
+  "rental_end_date": {
+    "$date": "2024-12-25T00:00:00.000Z"
+  },
+  "total_cost": 250
+},
+{
+  "_id": {
+    "$oid": "6762fa1bef01df556d16013c"
+  },
+  "vehicle_id": "6762f845c14c33fbcb491d74",
+  "customer_id": "6762f866c14c33fbcb491d76",
+  "rental_start_date": {
+    "$date": "2024-12-22T00:00:00.000Z"
+  },
+  "rental_end_date": {
+    "$date": "2024-12-24T00:00:00.000Z"
+  },
+  "total_cost": 300
+},
+{
+  "_id": {
+    "$oid": "676309403a04edda51c5f20b"
+  },
+  "vehicle_id": "6762f84ec14c33fbcb491d75",
+  "customer_id": "6762f879c14c33fbcb491d78",
+  "rental_start_date": {
+    "$date": "2024-12-20T00:00:00.000Z"
+  },
+  "rental_end_date": {
+    "$date": "2024-12-25T00:00:00.000Z"
+  },
+  "total_cost": 375
+}]

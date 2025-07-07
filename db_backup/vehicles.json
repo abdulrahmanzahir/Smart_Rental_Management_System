@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "6762e028925ac0a5f2855590"
+  },
+  "make": "Toyota",
+  "model": "Corolla",
+  "type": "CAR",
+  "rental_price_per_day": 50,
+  "availability_status": "RENTED",
+  "location": "Downtown Branch"
+},
+{
+  "_id": {
+    "$oid": "6762f82ec14c33fbcb491d72"
+  },
+  "make": "Honda",
+  "model": "Civic",
+  "type": "CAR",
+  "rental_price_per_day": 40,
+  "availability_status": "AVAILABLE",
+  "location": "Uptown Branch"
+},
+{
+  "_id": {
+    "$oid": "6762f83dc14c33fbcb491d73"
+  },
+  "make": "Ford",
+  "model": "Explorer",
+  "type": "SUV",
+  "rental_price_per_day": 100,
+  "availability_status": "AVAILABLE",
+  "location": "Downtown Branch"
+},
+{
+  "_id": {
+    "$oid": "6762f845c14c33fbcb491d74"
+  },
+  "make": "BMW",
+  "model": "X5",
+  "type": "SUV",
+  "rental_price_per_day": 150,
+  "availability_status": "RENTED",
+  "location": "Airport Branch"
+},
+{
+  "_id": {
+    "$oid": "6762f84ec14c33fbcb491d75"
+  },
+  "make": "Kawasaki",
+  "model": "Ninja ZX-6R",
+  "type": "MOTORCYCLE",
+  "rental_price_per_day": 75,
+  "availability_status": "RENTED",
+  "location": "Uptown Branch"
+}]

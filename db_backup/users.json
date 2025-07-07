@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6762e688b27144fd2751be42"
+  },
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "$2b$12$spxPMmfIF44QnWUGcqqiGeb62F.W6u/gCmhGxDnjPrUAyWzd5rnWa",
+  "role": "CUSTOMER"
+},
+{
+  "_id": {
+    "$oid": "6762f866c14c33fbcb491d76"
+  },
+  "name": "Alice Johnson",
+  "email": "alice@example.com",
+  "password": "$2b$12$WELvdHl6dcNk42emPEtiGOA.s1t7IPSDK88z95I3ogGgUR75hqn8m",
+  "role": "CUSTOMER"
+},
+{
+  "_id": {
+    "$oid": "6762f874c14c33fbcb491d77"
+  },
+  "name": "Bob Smith",
+  "email": "bob@example.com",
+  "password": "$2b$12$VKmwbkxB83aiBnW/TJt72emZzn0m5yaLrUJKInlpBk2K/JLyjWl2q",
+  "role": "CUSTOMER"
+},
+{
+  "_id": {
+    "$oid": "6762f879c14c33fbcb491d78"
+  },
+  "name": "Charlie Brown",
+  "email": "charlie@example.com",
+  "password": "$2b$12$byf5TgZDtODIzbYutSCCge85RuWCAwtNvapDz7SrySpFBDVvFXMHC",
+  "role": "CUSTOMER"
+}]
