@@ -1,57 +1,89 @@
-# Rental Management System
 
-## Description
-This project is a **Rental Management System** built with FastAPI. It allows users to manage vehicle rentals, handle bookings, and send real-time notifications. MongoDB is used for the database, and Apache Kafka logs important booking events.
+# 🚗 DriveEase – Smart Rental Management System
 
----
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-teal)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-Logging-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-## Features  
-- **User Authentication**: Register and login users with hashed passwords.  
-- **Role Management**: EMPLOYEE and CUSTOMER roles.  
-- **Vehicle Management**: Add, browse, and book vehicles.  
-- **Real-time Notifications**: WebSockets for live updates.  
-- **Event Logging**: Apache Kafka for logging booking events.  
+## 📌 Overview
+DriveEase is a **vehicle rental system** built with FastAPI, MongoDB, and Kafka. It allows users to browse, book, and manage vehicles with **role-based access**. Real-time updates and event logging are handled via WebSocket and Apache Kafka respectively.
 
 ---
 
-## Prerequisites
-Ensure the following are installed:  
-- **Python 3.8+**  
-- **MongoDB**  
-- **Apache Kafka**  
-- **Dependencies** listed in `requirements.txt`.
+## 🚀 Features
+- 🔐 User authentication with hashed passwords  
+- 👥 Role management (EMPLOYEE / CUSTOMER)  
+- 🚙 Add, view, and filter vehicles  
+- 🔔 Real-time notifications using WebSockets  
+- 📝 Event logging via Kafka
 
 ---
 
-## Installation and Setup
-1. Copy the project files to your local machine.
-2. Install the required Python dependencies:
+## 🛠️ Tech Stack
+- **FastAPI** (backend)
+- **MongoDB** (database)
+- **Apache Kafka** (event logging)
+- **WebSocket** (real-time updates)
+- **Python 3.8+**
+
+---
+
+## 📂 File Structure
+
+```bash
+📁 project-root/
+├── app/
+│   ├── main.py              # FastAPI application entry point
+│   └── database.py          # MongoDB connection logic
+├── db_backup/               # JSON files for users, vehicles, rentals
+├── tests/
+│   └── test_register.py     # Unit tests for user registration
+├── .env                     # Environment variables
+├── requirements.txt         # Python dependencies
+└── README.md
+```
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/driveease-rental-system
+cd driveease-rental-system
+pip install -r requirements.txt
+```
+
+1. Start **MongoDB**  
+2. Run **Zookeeper** and **Kafka**:
    ```bash
-   pip install -r requirements.txt
-3. Start MongoDB and ensure it is accessible.
-4. Start Zookeeper and Kafka servers:
-- **Run Zookeeper**: bin/windows/zookeeper-server-start.bat config/zookeeper.properties
-- **Run Kafka**: bin/windows/kafka-server-start.bat config/server.properties
-5. Launch the FastAPI server: uvicorn main:app --reload
-6. Access the API documentation at http://127.0.0.1:8000/docs.
+   # Windows example:
+   bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+   bin/windows/kafka-server-start.bat config/server.properties
+   ```
 
-## Database Backup and Restore
+3. Launch the server:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
-- Database exported to *db_backup* folder.
-- **To restore**: mongorestore --db rental_management ./db_backup/rental_management
+4. Visit Swagger Docs: `http://127.0.0.1:8000/docs`
 
-## How to Use
-1. Register users and log in through the API.
-2. Add vehicles and browse them based on filters.
-3. Book vehicles and receive real-time updates via WebSocket.
-4. Check booking logs via Kafka.
+---
 
-## File Structure
+## 💾 DB Backup / Restore
 
-- **main.py**: Core FastAPI application.
-- **database.py**: MongoDB connection setup.
-- **models/**: Pydantic models for user, vehicle, and booking.
-- **kafka_producer.py**: Event logging implementation.
-- **db_backup/**: Backup of the MongoDB database.
+```bash
+mongorestore --db rental_management ./db_backup/rental_management
+```
 
+---
 
+## 🙌 Author
+Abdulrahman Zahir  
+[GitHub Profile](https://github.com/abdulrahmanzahir)
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
