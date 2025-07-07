@@ -39,7 +39,6 @@ DriveEase is a **vehicle rental system** built with FastAPI, MongoDB, and Kafka.
 ├── db_backup/               # JSON files for users, vehicles, rentals
 ├── tests/
 │   └── test_register.py     # Unit tests for user registration
-├── .env                     # Environment variables
 ├── requirements.txt         # Python dependencies
 └── README.md
 ```
